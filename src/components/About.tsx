@@ -1,5 +1,4 @@
-const aboutImage =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuCkDPsIBzlJmbJKrb0BVbkUxR6wF26c8NsyghtvHAiaETjXM1FHjEzCKSO4xuKWtvS0ruR1NFHmoHq-Cxm0AZAJ73r848bGWkRw7aMwt0_tQkwCnaB7LERo06NRne8DH1_zs81AVcnnXpkYwtZ2-JcM-DsZZ-mp87heB3AyAyi-tS6sbAu0oPbg2NBoRitAtJs0Pndw-PCd0D655Vn_1IB-LhKyQXnKxaW2q-d7kCh2S0FbMPzUlFkWLNBFEZXW_-q62LoF6fMX1Otg";
+const aboutImage = "/laptop-on-a-desk.png";
 
 const About = () => {
   return (

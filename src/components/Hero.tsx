@@ -9,14 +9,15 @@ const Hero = () => {
         AVAILABLE FOR HIRE
       </div>
 
-      <h1 className="font-display text-5xl md:text-7xl font-extrabold mb-6 leading-tight tracking-tight">
-        web_dev_pr0 —{" "}
+      <h1 className="font-display text-5xl md:text-7xl font-extrabold mb-6 leading-none tracking-tight">
+        web_dev_pr0
+        <br />
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary via-purple-400 to-cyan-400">
           Front End Developer
         </span>
       </h1>
 
-      <p className="text-slate-400 text-lg md:text-xl max-w-2xl mb-10 leading-relaxed">
+      <p className="text-slate-400 text-lg md:text-xl max-w-2xl mb-10 leading-[1.4]">
         Building modern, fast, and interactive web experiences. Specialized in
         crafting performance-driven interfaces with a touch of Mediterranean
         creativity.

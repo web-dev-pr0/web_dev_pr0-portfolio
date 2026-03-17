@@ -67,10 +67,10 @@ const Projects = () => {
               </p>
 
               <div className="flex gap-4">
-                <button className="flex-1 bg-primary hover:bg-primary/90 text-white py-3 rounded-xl text-sm font-bold transition-all">
+                <button className="flex-1 bg-primary hover:bg-primary/90 text-white py-3 rounded-xl text-sm font-bold transition-all cursor-pointer">
                   View Project
                 </button>
-                <button className="glass-card hover:bg-white/10 px-4 py-3 rounded-xl transition-all">
+                <button className="glass-card hover:bg-white/10 px-4 py-3 rounded-xl transition-all cursor-pointer">
                   <span className="material-symbols-outlined text-xl">
                     code
                   </span>

@@ -3,10 +3,8 @@ const Footer = () => {
     <footer className="py-12 border-t border-glass-border">
       <div className="flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="flex items-center gap-3">
-          <div className="size-6 bg-primary/20 rounded-md flex items-center justify-center text-primary">
-            <span className="material-symbols-outlined text-sm font-bold">
-              code
-            </span>
+          <div className="size-8 bg-primary rounded-lg flex items-center justify-center text-white shadow-lg shadow-primary/20">
+            <span className="material-symbols-outlined text-xl">code</span>
           </div>
           <span className="font-display font-bold text-sm">web_dev_pr0</span>
         </div>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>web_dev_pr0 | Front End Developer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Sora:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#0a0f14",
+                        "glass-border": "rgba(255, 255, 255, 0.1)",
+                    },
+                    fontFamily: {
+                        "display": ["Sora", "sans-serif"],
+                        "sans": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glow-blue {
+            box-shadow: 0 0 40px -10px rgba(19, 127, 236, 0.3);
+        }
+        .bg-mesh {
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(19, 127, 236, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(139, 92, 246, 0.15) 0px, transparent 50%),
+                radial-gradient(at 50% 100%, rgba(6, 182, 212, 0.15) 0px, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 selection:bg-primary/30 min-h-screen bg-mesh">
+<div class="fixed top-0 left-0 w-full z-50 px-4 pt-6">
+<header class="max-w-6xl mx-auto glass-card rounded-2xl px-6 py-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-xl">code</span>
+</div>
+<h2 class="font-display font-bold text-lg tracking-tight">web_dev_pr0</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#about">About</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#skills">Skills</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#projects">Projects</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#contact">Contact</a>
+</nav>
+<button class="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-xl text-sm font-bold transition-all shadow-lg shadow-primary/20">
+                Resume
+            </button>
+</header>
+</div>
+<main class="max-w-6xl mx-auto px-4 pt-32">
+<section class="py-20 lg:py-32 flex flex-col items-center text-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full glass-card text-xs font-bold text-primary mb-8">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+                AVAILABLE FOR HIRE
+            </div>
+<h1 class="font-display text-5xl md:text-7xl font-extrabold mb-6 leading-tight tracking-tight">
+                web_dev_pr0 — <span class="bg-clip-text text-transparent bg-gradient-to-r from-primary via-purple-400 to-cyan-400">Front End Developer</span>
+</h1>
+<p class="text-slate-400 text-lg md:text-xl max-w-2xl mb-10 leading-relaxed">
+                Building modern, fast, and interactive web experiences. Specialized in crafting performance-driven interfaces with a touch of Mediterranean creativity.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-2xl font-bold transition-all shadow-xl shadow-primary/20" href="#projects">
+                    View Projects
+                </a>
+<a class="glass-card hover:bg-white/10 px-8 py-4 rounded-2xl font-bold transition-all" href="#contact">
+                    Let's Talk
+                </a>
+</div>
+</section>
+<section class="py-20" id="about">
+<div class="glass-card rounded-3xl p-8 md:p-12 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-[100px] -z-10"></div>
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="font-display text-3xl font-bold mb-6">About Me</h2>
+<p class="text-slate-400 leading-relaxed mb-6">
+                            Based in Greece, I combine creative passion with technical excellence. I specialize in building performant and engaging interfaces that prioritize user experience without sacrificing speed.
+                        </p>
+<p class="text-slate-400 leading-relaxed">
+                            With a focus on modern web technologies, I transform complex requirements into seamless digital experiences. My approach is rooted in clean code, accessibility, and modern design principles.
+                        </p>
+</div>
+<div class="aspect-square rounded-2xl overflow-hidden glass-card p-2">
+<div class="w-full h-full rounded-xl bg-cover bg-center" data-alt="Modern workspace with laptop and aesthetic lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCkDPsIBzlJmbJKrb0BVbkUxR6wF26c8NsyghtvHAiaETjXM1FHjEzCKSO4xuKWtvS0ruR1NFHmoHq-Cxm0AZAJ73r848bGWkRw7aMwt0_tQkwCnaB7LERo06NRne8DH1_zs81AVcnnXpkYwtZ2-JcM-DsZZ-mp87heB3AyAyi-tS6sbAu0oPbg2NBoRitAtJs0Pndw-PCd0D655Vn_1IB-LhKyQXnKxaW2q-d7kCh2S0FbMPzUlFkWLNBFEZXW_-q62LoF6fMX1Otg')"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20" id="skills">
+<h2 class="font-display text-3xl font-bold mb-12 text-center">Tech Stack</h2>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+<div class="glass-card p-6 rounded-2xl flex flex-col items-center gap-4 hover:border-primary/50 transition-colors group">
+<div class="size-12 rounded-xl bg-orange-500/10 flex items-center justify-center text-orange-500 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">html</span>
+</div>
+<span class="font-bold text-sm">HTML5</span>
+</div>
+<div class="glass-card p-6 rounded-2xl flex flex-col items-center gap-4 hover:border-primary/50 transition-colors group">
+<div class="size-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-500 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">css</span>
+</div>
+<span class="font-bold text-sm">CSS3</span>
+</div>
+<div class="glass-card p-6 rounded-2xl flex flex-col items-center gap-4 hover:border-primary/50 transition-colors group">
+<div class="size-12 rounded-xl bg-yellow-500/10 flex items-center justify-center text-yellow-500 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">javascript</span>
+</div>
+<span class="font-bold text-sm">JavaScript</span>
+</div>
+<div class="glass-card p-6 rounded-2xl flex flex-col items-center gap-4 hover:border-primary/50 transition-colors group">
+<div class="size-12 rounded-xl bg-blue-400/10 flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">terminal</span>
+</div>
+<span class="font-bold text-sm">TypeScript</span>
+</div>
+<div class="glass-card p-6 rounded-2xl flex flex-col items-center gap-4 hover:border-primary/50 transition-colors group">
+<div class="size-12 rounded-xl bg-cyan-400/10 flex items-center justify-center text-cyan-400 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">dynamic_form</span>
+</div>
+<span class="font-bold text-sm">React</span>
+</div>
+<div class="glass-card p-6 rounded-2xl flex flex-col items-center gap-4 hover:border-primary/50 transition-colors group">
+<div class="size-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">style</span>
+</div>
+<span class="font-bold text-sm">Tailwind CSS</span>
+</div>
+</div>
+</section>
+<section class="py-20" id="projects">
+<h2 class="font-display text-3xl font-bold mb-12">Featured Projects</h2>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="glass-card rounded-3xl overflow-hidden group">
+<div class="h-64 overflow-hidden relative">
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent z-10"></div>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dashboard interface preview with charts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAK5rwS93gDixCAXGeXifjXfxynRveB37H46amIZioOP8dKmVWDUkTtSTCDECK1aDBNnbJtZyskh6UfXBUcMNQdmUM7Qb65-zCWX_0RQtXiaerzaHwgzPTENmyVFX9VZ6HMOAu8bjH-tdJg7ApMoq1unhFQfmf8-rfeHxKVvPvnOI4Osigx5S44D1YPAYr7sxFjDYB9zXbkf-16Dn2yCaXcjZXSrL8-xo2_t8kBkb5lxuqZl6SHhBIvY9mCcLvfjvEIoTgSWwXGqxc1"/>
+</div>
+<div class="p-8">
+<div class="flex gap-2 mb-4">
+<span class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded-full uppercase">React</span>
+<span class="px-3 py-1 bg-purple-500/10 text-purple-400 text-[10px] font-bold rounded-full uppercase">Tailwind</span>
+</div>
+<h3 class="font-display text-2xl font-bold mb-3">Neo Dashboard</h3>
+<p class="text-slate-400 text-sm mb-6 leading-relaxed">A high-performance analytics dashboard for crypto assets with real-time updates and interactive charts.</p>
+<div class="flex gap-4">
+<button class="flex-1 bg-primary hover:bg-primary/90 text-white py-3 rounded-xl text-sm font-bold transition-all">View Project</button>
+<button class="glass-card hover:bg-white/10 px-4 py-3 rounded-xl transition-all">
+<span class="material-symbols-outlined text-xl">code</span>
+</button>
+</div>
+</div>
+</div>
+<div class="glass-card rounded-3xl overflow-hidden group">
+<div class="h-64 overflow-hidden relative">
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent z-10"></div>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="E-commerce mobile app design with product cards" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEF3qZfVm3PwS2G-lNLOWx5klpT-EfvfItblwjiYawR5gy-HBKHpIjfPS_wkqB_XqJQi4pgH8N7aKcirvrHxFUdcfIj1Ayw9vt7_p9FDg9Lz4TqJpBtMvbhxz5QgQCr6p3Tv0gE_1gGAKClZT6iSZQwkXlgMuqZPfXsP6cabCTofUa57nG_v4vnoQasyzuWiEywa-dEA4H-lUAL72bdW4pQKiRkbGmUPxfl4CFEk1mAFHPwSOFNhWqTc0lj61aY-C2BO0_pautwh_D"/>
+</div>
+<div class="p-8">
+<div class="flex gap-2 mb-4">
+<span class="px-3 py-1 bg-cyan-500/10 text-cyan-400 text-[10px] font-bold rounded-full uppercase">TypeScript</span>
+<span class="px-3 py-1 bg-pink-500/10 text-pink-400 text-[10px] font-bold rounded-full uppercase">Next.js</span>
+</div>
+<h3 class="font-display text-2xl font-bold mb-3">Lumina Shop</h3>
+<p class="text-slate-400 text-sm mb-6 leading-relaxed">Modern e-commerce platform featuring glassmorphism UI components and server-side rendering for speed.</p>
+<div class="flex gap-4">
+<button class="flex-1 bg-primary hover:bg-primary/90 text-white py-3 rounded-xl text-sm font-bold transition-all">View Project</button>
+<button class="glass-card hover:bg-white/10 px-4 py-3 rounded-xl transition-all">
+<span class="material-symbols-outlined text-xl">code</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-20" id="contact">
+<div class="max-w-3xl mx-auto glass-card rounded-3xl p-8 md:p-12">
+<div class="text-center mb-12">
+<h2 class="font-display text-3xl font-bold mb-4">Get In Touch</h2>
+<p class="text-slate-400">Have a project in mind? Let's build something amazing together.</p>
+</div>
+<form action="#" class="space-y-6">
+<div class="grid md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-xs font-bold text-slate-400 uppercase tracking-widest ml-1">Name</label>
+<input class="w-full glass-card rounded-xl px-4 py-3 border-none focus:ring-2 focus:ring-primary text-white placeholder:text-slate-600 outline-none transition-all" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-slate-400 uppercase tracking-widest ml-1">Email</label>
+<input class="w-full glass-card rounded-xl px-4 py-3 border-none focus:ring-2 focus:ring-primary text-white placeholder:text-slate-600 outline-none transition-all" placeholder="john@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-slate-400 uppercase tracking-widest ml-1">Message</label>
+<textarea class="w-full glass-card rounded-xl px-4 py-3 border-none focus:ring-2 focus:ring-primary text-white placeholder:text-slate-600 outline-none transition-all resize-none" placeholder="How can I help you?" rows="4"></textarea>
+</div>
+<button class="w-full bg-primary hover:bg-primary/90 text-white py-4 rounded-xl font-bold transition-all shadow-xl shadow-primary/20">
+                        Send Message
+                    </button>
+</form>
+</div>
+</section>
+<footer class="py-12 border-t border-glass-border">
+<div class="flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="flex items-center gap-3">
+<div class="size-6 bg-primary/20 rounded-md flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-sm font-bold">code</span>
+</div>
+<span class="font-display font-bold text-sm">web_dev_pr0</span>
+</div>
+<div class="flex items-center gap-6">
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<svg class="size-5 fill-current" viewbox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+</a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<svg class="size-5 fill-current" viewbox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
+</a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<svg class="size-5 fill-current" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+</div>
+<p class="text-slate-500 text-sm">
+                    © <script>document.write(new Date().getFullYear())</script> web_dev_pr0. All rights reserved.
+                </p>
+</div>
+</footer>
+</main>
+</body></html>

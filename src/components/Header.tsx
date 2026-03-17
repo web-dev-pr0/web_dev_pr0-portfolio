@@ -1,14 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const navLinks = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
 ];
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && menuOpen) setMenuOpen(false);
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [menuOpen]);
 
   return (
     <div className="fixed top-0 left-0 w-full z-50 px-4 pt-6">
@@ -34,10 +41,6 @@ const Header = () => {
           ))}
         </nav>
 
-        <button className="hidden md:block bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-xl text-sm font-bold transition-all shadow-lg shadow-primary/20 cursor-pointer">
-          Resume
-        </button>
-
         <button
           className="md:hidden flex items-center justify-center cursor-pointer"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -62,9 +65,6 @@ const Header = () => {
               {link.label}
             </a>
           ))}
-          <button className="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-xl text-sm font-bold transition-all shadow-lg shadow-primary/20 cursor-pointer">
-            Resume
-          </button>
         </div>
       )}
     </div>

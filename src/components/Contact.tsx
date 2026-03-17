@@ -24,6 +24,7 @@ const Contact = () => {
               <input
                 id="name"
                 name="name"
+                required
                 aria-required="true"
                 className="w-full glass-card rounded-xl px-4 py-3 border-none focus:ring-2 focus:ring-primary text-white placeholder:text-slate-600 outline-none transition-all"
                 placeholder="John Doe"
@@ -37,6 +38,7 @@ const Contact = () => {
               <input
                 id="email"
                 name="email"
+                required
                 aria-required="true"
                 className="w-full glass-card rounded-xl px-4 py-3 border-none focus:ring-2 focus:ring-primary text-white placeholder:text-slate-600 outline-none transition-all"
                 placeholder="john@example.com"
@@ -52,6 +54,7 @@ const Contact = () => {
             <textarea
               id="message"
               name="message"
+              required
               aria-required="true"
               className="w-full glass-card rounded-xl px-4 py-3 border-none focus:ring-2 focus:ring-primary text-white placeholder:text-slate-600 outline-none transition-all resize-none"
               placeholder="How can I help you?"

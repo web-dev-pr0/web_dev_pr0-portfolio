@@ -1,26 +1,16 @@
 const projects = [
   {
-    title: "Neo Dashboard",
+    title: "Bloomie",
     description:
-      "A high-performance analytics dashboard for crypto assets with real-time updates and interactive charts.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAK5rwS93gDixCAXGeXifjXfxynRveB37H46amIZioOP8dKmVWDUkTtSTCDECK1aDBNnbJtZyskh6UfXBUcMNQdmUM7Qb65-zCWX_0RQtXiaerzaHwgzPTENmyVFX9VZ6HMOAu8bjH-tdJg7ApMoq1unhFQfmf8-rfeHxKVvPvnOI4Osigx5S44D1YPAYr7sxFjDYB9zXbkf-16Dn2yCaXcjZXSrL8-xo2_t8kBkb5lxuqZl6SHhBIvY9mCcLvfjvEIoTgSWwXGqxc1",
-    imageAlt: "Dashboard interface preview with charts",
+      "An interactive gardening companion that helps you design and visualize your perfect garden layout with a drag-and-drop grid planner, plant database, and seasonal planting calendar.",
+    image: "/bloomie-preview.png",
+    imageAlt: "Bloomie gardening app with garden planner and plant information",
+    liveUrl: "https://bloomie-nu.vercel.app/",
+    repoUrl: "https://github.com/web-dev-pr0/bloomie",
     tags: [
       { label: "React", color: "bg-primary/10 text-primary" },
-      { label: "Tailwind", color: "bg-purple-500/10 text-purple-400" },
-    ],
-  },
-  {
-    title: "Lumina Shop",
-    description:
-      "Modern e-commerce platform featuring glassmorphism UI components and server-side rendering for speed.",
-    image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAEF3qZfVm3PwS2G-lNLOWx5klpT-EfvfItblwjiYawR5gy-HBKHpIjfPS_wkqB_XqJQi4pgH8N7aKcirvrHxFUdcfIj1Ayw9vt7_p9FDg9Lz4TqJpBtMvbhxz5QgQCr6p3Tv0gE_1gGAKClZT6iSZQwkXlgMuqZPfXsP6cabCTofUa57nG_v4vnoQasyzuWiEywa-dEA4H-lUAL72bdW4pQKiRkbGmUPxfl4CFEk1mAFHPwSOFNhWqTc0lj61aY-C2BO0_pautwh_D",
-    imageAlt: "E-commerce mobile app design with product cards",
-    tags: [
       { label: "TypeScript", color: "bg-cyan-500/10 text-cyan-400" },
-      { label: "Next.js", color: "bg-pink-500/10 text-pink-400" },
+      { label: "Tailwind", color: "bg-purple-500/10 text-purple-400" },
     ],
   },
 ];
@@ -67,14 +57,28 @@ const Projects = () => {
               </p>
 
               <div className="flex gap-4">
-                <button className="flex-1 bg-primary hover:bg-primary/90 text-white py-3 rounded-xl text-sm font-bold transition-all cursor-pointer">
-                  View Project
-                </button>
-                <button aria-label={`View source code for ${project.title}`} className="glass-card hover:bg-white/10 px-4 py-3 rounded-xl transition-all cursor-pointer">
-                  <span className="material-symbols-outlined text-xl" aria-hidden="true">
-                    code
-                  </span>
-                </button>
+                {project.liveUrl ? (
+                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex-1 bg-primary hover:bg-primary/90 text-white py-3 rounded-xl text-sm font-bold transition-all cursor-pointer text-center">
+                    View Project
+                  </a>
+                ) : (
+                  <button className="flex-1 bg-primary hover:bg-primary/90 text-white py-3 rounded-xl text-sm font-bold transition-all cursor-pointer">
+                    View Project
+                  </button>
+                )}
+                {project.repoUrl ? (
+                  <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" aria-label={`View source code for ${project.title}`} className="glass-card hover:bg-white/10 px-4 py-3 rounded-xl transition-all cursor-pointer flex items-center justify-center">
+                    <span className="material-symbols-outlined text-xl" aria-hidden="true">
+                      code
+                    </span>
+                  </a>
+                ) : (
+                  <button aria-label={`View source code for ${project.title}`} className="glass-card hover:bg-white/10 px-4 py-3 rounded-xl transition-all cursor-pointer">
+                    <span className="material-symbols-outlined text-xl" aria-hidden="true">
+                      code
+                    </span>
+                  </button>
+                )}
               </div>
             </div>
           </div>

@@ -1,4 +1,4 @@
-const aboutImage = "/laptop-on-a-desk.png";
+const aboutImage = `${import.meta.env.BASE_URL}laptop-on-a-desk.png`;
 
 const About = () => {
   return (

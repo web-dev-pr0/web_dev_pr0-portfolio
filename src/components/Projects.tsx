@@ -3,7 +3,7 @@ const projects = [
     title: "Bloomie",
     description:
       "An interactive gardening companion that helps you design and visualize your perfect garden layout with a drag-and-drop grid planner, plant database, and seasonal planting calendar.",
-    image: "/bloomie-preview.png",
+    image: `${import.meta.env.BASE_URL}bloomie-preview.png`,
     imageAlt: "Bloomie gardening app with garden planner and plant information",
     liveUrl: "https://bloomie-nu.vercel.app/",
     repoUrl: "https://github.com/web-dev-pr0/bloomie",

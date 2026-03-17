@@ -27,6 +27,12 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+:focus-visible {
+  outline: 2px solid #137fec;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
 .glow-blue {
   box-shadow: 0 0 40px -10px rgba(19, 127, 236, 0.3);
 }

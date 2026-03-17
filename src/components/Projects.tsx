@@ -27,8 +27,8 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="py-20" id="projects">
-      <h2 className="font-display text-3xl font-bold mb-12">
+    <section className="py-20" id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading" className="font-display text-3xl font-bold mb-12">
         Featured Projects
       </h2>
 
@@ -70,8 +70,8 @@ const Projects = () => {
                 <button className="flex-1 bg-primary hover:bg-primary/90 text-white py-3 rounded-xl text-sm font-bold transition-all cursor-pointer">
                   View Project
                 </button>
-                <button className="glass-card hover:bg-white/10 px-4 py-3 rounded-xl transition-all cursor-pointer">
-                  <span className="material-symbols-outlined text-xl">
+                <button aria-label={`View source code for ${project.title}`} className="glass-card hover:bg-white/10 px-4 py-3 rounded-xl transition-all cursor-pointer">
+                  <span className="material-symbols-outlined text-xl" aria-hidden="true">
                     code
                   </span>
                 </button>

@@ -2,13 +2,13 @@ const aboutImage = "/laptop-on-a-desk.png";
 
 const About = () => {
   return (
-    <section className="py-20" id="about">
+    <section className="py-20" id="about" aria-labelledby="about-heading">
       <div className="glass-card rounded-3xl p-8 md:p-12 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-[100px] -z-10" />
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="font-display text-3xl font-bold mb-6">About Me</h2>
+            <h2 id="about-heading" className="font-display text-3xl font-bold mb-6">About Me</h2>
             <p className="text-slate-400 leading-relaxed mb-6">
               Based in Greece, I combine creative passion with technical
               excellence. I specialize in building performant and engaging

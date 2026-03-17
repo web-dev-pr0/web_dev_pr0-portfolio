@@ -9,8 +9,8 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section className="py-20" id="skills">
-      <h2 className="font-display text-3xl font-bold mb-12 text-center">
+    <section className="py-20" id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading" className="font-display text-3xl font-bold mb-12 text-center">
         Tech Stack
       </h2>
 
@@ -23,7 +23,7 @@ const Skills = () => {
             <div
               className={`size-12 rounded-xl ${skill.bg} flex items-center justify-center ${skill.color} group-hover:scale-110 transition-transform`}
             >
-              <span className="material-symbols-outlined text-3xl">
+              <span className="material-symbols-outlined text-3xl" aria-hidden="true">
                 {skill.icon}
               </span>
             </div>

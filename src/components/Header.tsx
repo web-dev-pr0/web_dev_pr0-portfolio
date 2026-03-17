@@ -15,14 +15,14 @@ const Header = () => {
       <header className="max-w-6xl mx-auto glass-card rounded-2xl px-6 py-4 flex items-center justify-between">
         <a href="#" className="flex items-center gap-3 cursor-pointer" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }}>
           <div className="size-8 bg-primary rounded-lg flex items-center justify-center text-white shadow-lg shadow-primary/20">
-            <span className="material-symbols-outlined text-xl">code</span>
+            <span className="material-symbols-outlined text-xl" aria-hidden="true">code</span>
           </div>
           <h2 className="font-display font-bold text-lg tracking-tight">
             web_dev_pr0
           </h2>
         </a>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -41,9 +41,10 @@ const Header = () => {
         <button
           className="md:hidden flex items-center justify-center cursor-pointer"
           onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen}
         >
-          <span className="material-symbols-outlined text-2xl">
+          <span className="material-symbols-outlined text-2xl" aria-hidden="true">
             {menuOpen ? "close" : "menu"}
           </span>
         </button>

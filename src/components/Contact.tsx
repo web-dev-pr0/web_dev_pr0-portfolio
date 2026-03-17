@@ -6,10 +6,10 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-20" id="contact">
+    <section className="py-20" id="contact" aria-labelledby="contact-heading">
       <div className="max-w-3xl mx-auto glass-card rounded-3xl p-8 md:p-12">
         <div className="text-center mb-12">
-          <h2 className="font-display text-3xl font-bold mb-4">Get In Touch</h2>
+          <h2 id="contact-heading" className="font-display text-3xl font-bold mb-4">Get In Touch</h2>
           <p className="text-slate-400">
             Have a project in mind? Let's build something amazing together.
           </p>
@@ -18,20 +18,26 @@ const Contact = () => {
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-2">
-              <label className="text-xs font-bold text-slate-400 uppercase tracking-widest ml-1">
+              <label htmlFor="name" className="text-xs font-bold text-slate-400 uppercase tracking-widest ml-1">
                 Name
               </label>
               <input
+                id="name"
+                name="name"
+                aria-required="true"
                 className="w-full glass-card rounded-xl px-4 py-3 border-none focus:ring-2 focus:ring-primary text-white placeholder:text-slate-600 outline-none transition-all"
                 placeholder="John Doe"
                 type="text"
               />
             </div>
             <div className="space-y-2">
-              <label className="text-xs font-bold text-slate-400 uppercase tracking-widest ml-1">
+              <label htmlFor="email" className="text-xs font-bold text-slate-400 uppercase tracking-widest ml-1">
                 Email
               </label>
               <input
+                id="email"
+                name="email"
+                aria-required="true"
                 className="w-full glass-card rounded-xl px-4 py-3 border-none focus:ring-2 focus:ring-primary text-white placeholder:text-slate-600 outline-none transition-all"
                 placeholder="john@example.com"
                 type="email"
@@ -40,10 +46,13 @@ const Contact = () => {
           </div>
 
           <div className="space-y-2">
-            <label className="text-xs font-bold text-slate-400 uppercase tracking-widest ml-1">
+            <label htmlFor="message" className="text-xs font-bold text-slate-400 uppercase tracking-widest ml-1">
               Message
             </label>
             <textarea
+              id="message"
+              name="message"
+              aria-required="true"
               className="w-full glass-card rounded-xl px-4 py-3 border-none focus:ring-2 focus:ring-primary text-white placeholder:text-slate-600 outline-none transition-all resize-none"
               placeholder="How can I help you?"
               rows={4}
